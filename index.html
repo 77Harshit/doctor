@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health organitation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+   <style>
+    body{
+    margin: 0;
+    padding: 0;
+}
+
+.offcanvas{
+    background-color:rgb(47, 47, 248);
+}
+.dropdown-menu{
+  background-color: rgb(47, 47, 248);
+  border: none;
+}
+.dropdown-menu:hover{
+  background-color: rgb(59, 59, 247);
+}
+.Appointment-nav{
+    background-color: rgb(20, 190, 20);
+    
+}
+.Appointment-nav:hover{
+    background-color: rgb(31, 231, 31);
+}
+#appointment-link{
+  text-decoration: none;
+  color: black;
+}
+.Home{
+    background-image: url("https://wallpapercave.com/wp/wp2968524.jpg");
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+ width: auto;
+    height: 100vh;
+    background-size: cover;
+    padding-top: 15%;
+}
+.cls-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+
+    font-size: large;
+  }
+  .cls-button:hover{
+    background-color: #747478;
+    color: #19191a;
+  }
+  .about{
+    background-image: url("https://wallpaperaccess.com/full/1076735.jpg");
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+ width: auto;
+    height: 100vh;
+    background-size: cover;
+   
+  }
+  #H{
+    background-color: black;
+    color: #fff;
+  }
+  #abtline{
+    padding-top: 7%;
+  }
+  #principal{
+    border-radius: 50%;
+    border: 2px solid black;
+  }
+  #neil{
+    padding-left: 8%;
+  }
+  #abt-total{
+    padding-left: 18%;
+    padding-top: 10%;
+  }
+  /* Your Doctors css */
+  #doctors{
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-weight: bold;
+   padding-left: 10%;
+  }
+  .card-group{
+    gap: 3%;
+    padding-left: 18%;
+    padding-right: 18%;
+    
+  }
+ 
+  .card-text{
+    height: 0px;
+  }
+  .card-title{
+     font-weight: bold;
+     font-size: 25px;
+  }
+ 
+  #no{
+    padding-left: 5%;
+ 
+  }
+  #no1{
+    padding-left: 5%;
+  }
+  .card{
+    background-color: whitesmoke;
+  }
+  
+   /* News css */
+   .news{
+     background-color: whitesmoke;
+   }
+   #news-cards{
+    padding-left: 15%;
+    padding-right: 15%;
+    margin: 0%;
+       }
+   .card{
+    border: none;
+   }
+       #ceo{
+        border-radius: 50%;
+       }
+      #Founder{
+        padding-left: 10%;
+      }
+      /* Appointment css */
+      .Appointment-section{
+        margin: 0%;
+      }
+      .Appointment{
+        background-image: url("https://themewagon.github.io/health-center/images/appointment-image.jpg");
+        position: relative;
+        background-position: center;
+        background-repeat: no-repeat;
+          height: 100vh;
+       width: auto;
+        background-size: cover;
+       
+      }
+      
+      select{
+        width: 180px;;
+       }
+    /* Google maps css */
+  #google-map{
+    margin: 0;
+    padding: 0;
+  }
+/* footer css */
+  #footer-news{
+      padding-left: 10%;
+  }
+  #footer-image{
+    border-radius: 50%;
+  }
+  #arrow{
+    color: grey;
+  }
+ #fb{
+  padding-left: 30px ;
+  
+ }
+ .top{
+  padding-left: 60%;
+  cursor: pointer;
+ }
+ 
+   </style>
+</head>
+<body>
+    <nav class="navbar bg-primary fixed-top" data-bs-theme="dark">
+      
+      
+    
+        <div class="container-fluid "  >
+          <a class="navbar-brand" href="#health-center"><font size="5">Health Center</font></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Health Organisation</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#aboutus">About Us</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Features
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#doctors">Doctors</a></li>
+                    <li><a class="dropdown-item" href="#news">News</a></li>
+                   
+                    <li><a class="dropdown-item" href="#contact">Contact</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-primary Appointment-nav" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><a href="#appointment" id="appointment-link">Make an Appointment</a></button>
+
+                  
+                  </li>
+              </ul>
+              
+            </div>
+          </div>
+        </div>
+      </nav><br><br>
+      <section class="Home"  id="health-center">
+          <h6 align="Center" id="home" >
+      <font size="5">YOUR HEALTH CENTER TELLUS</font>
+          </h6>
+          <H1 align="Center">
+            New Lifestyle
+          </H1>
+       <h1 align="center">
+        <a href="#aboutus" class="cls-button"> More About Us</a>
+       </h1>
+      </section>
+      <section class="about" id="aboutus" >
+        <div id="abt-total aboutus">
+       <h1 align="Center" id="abtline">
+
+                     <b>Welcome to Your <span id="H">H</span>ealth <br >Center</b>
+       </h1> <br>
+     
+        <h5 align="center">
+                          These centres will provide comprehensive health care, covering <br>around 70%         of out-patient care,   including noncommunicable <br>  diseases and maternal and child health services. 
+           </h5> <br>
+            <h5>
+                <table align="center">
+                    <tr>
+                        <td>
+                            <img src="https://getwallpapers.com/wallpaper/full/2/6/1/302428.jpg" alt="logo" height="80px" width="100px" id="principal">
+                        </td>
+                        <td>
+                           <font size="6"> Dr. Neil Jackson</font> <br> <font color="grey"> General principal</font>
+                        </td>
+                    </tr>
+                </table>
+            </h5>
+        </div>
+      </section><br><br><br>
+      <!-- Doctor section start here -->
+      
+         <H1 id="doctors">
+          OUR DOCTORS
+         </H1>
+         
+         <div class="card-group" >
+          <div class="card">
+            <img src="https://themewagon.github.io/health-center/images/team-image1.jpg" class="card-img" alt="...">
+            <div class="card-body " id="card-total">
+              <h5 class="card-title">Nate Baston</h5>
+              <p class="card-text">General principal</p> <br><hr>
+              <div id="no">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-telephone-forward-fill" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877zm10.761.135a.5.5 0 0 1 .708 0l2.5 2.5a.5.5 0 0 1 0 .708l-2.5 2.5a.5.5 0 0 1-.708-.708L14.293 4H9.5a.5.5 0 0 1 0-1h4.793l-1.647-1.646a.5.5 0 0 1 0-.708"/>
+              </svg><font size="3" color="grey" id="no1" >010-020-0120</font></div><br>
+              <div id="no">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-envelope-check-fill" viewBox="0 0 16 16">
+                  <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.026A2 2 0 0 0 2 14h6.256A4.5 4.5 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586zM16 4.697v4.974A4.5 4.5 0 0 0 12.5 8a4.5 4.5 0 0 0-1.965.45l-.338-.207z"/>
+                  <path d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0m-1.993-1.679a.5.5 0 0 0-.686.172l-1.17 1.95-.547-.547a.5.5 0 0 0-.708.708l.774.773a.75.75 0 0 0 1.174-.144l1.335-2.226a.5.5 0 0 0-.172-.686"/>
+                </svg><font size="3" color="grey" id="no1" >general@company.com</font>
+              </div>
+            </div>
+            
+            
+          </div>
+          <div class="card">
+            <img src="https://themewagon.github.io/health-center/images/team-image2.jpg" class="card-img-top card-img" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Jason Stewart</h5>
+              <p class="card-text">Pregnancy</p><br><hr>
+              <div id="no">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-telephone-forward-fill" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877zm10.761.135a.5.5 0 0 1 .708 0l2.5 2.5a.5.5 0 0 1 0 .708l-2.5 2.5a.5.5 0 0 1-.708-.708L14.293 4H9.5a.5.5 0 0 1 0-1h4.793l-1.647-1.646a.5.5 0 0 1 0-.708"/>
+                </svg><font size="4" color="grey" id="no1" >010-070-0170</font></div><br>
+                <div id="no">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-envelope-check-fill" viewBox="0 0 16 16">
+                    <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.026A2 2 0 0 0 2 14h6.256A4.5 4.5 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586zM16 4.697v4.974A4.5 4.5 0 0 0 12.5 8a4.5 4.5 0 0 0-1.965.45l-.338-.207z"/>
+                    <path d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0m-1.993-1.679a.5.5 0 0 0-.686.172l-1.17 1.95-.547-.547a.5.5 0 0 0-.708.708l.774.773a.75.75 0 0 0 1.174-.144l1.335-2.226a.5.5 0 0 0-.172-.686"/>
+                  </svg><font size="3" color="grey" id="no1" >pregnancy@company.com</font>
+                </div>
+            </div>
+           
+          </div>
+         
+          <div class="card">
+            <img src="https://themewagon.github.io/health-center/images/team-image3.jpg" class="card-img-top card-img" alt="...">
+            <div class="card-body " id="abt-card">
+              <h5 class="card-title">Miasha Nakahara</h5>
+              <p class="card-text">Cardiology</p><br><hr>
+              <div id="no">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-telephone-forward-fill" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877zm10.761.135a.5.5 0 0 1 .708 0l2.5 2.5a.5.5 0 0 1 0 .708l-2.5 2.5a.5.5 0 0 1-.708-.708L14.293 4H9.5a.5.5 0 0 1 0-1h4.793l-1.647-1.646a.5.5 0 0 1 0-.708"/>
+                </svg><font size="4" color="grey" id="no1" >010-040-0140</font></div><br>
+                <div id="no">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-envelope-check-fill" viewBox="0 0 16 16">
+                    <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.026A2 2 0 0 0 2 14h6.256A4.5 4.5 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586zM16 4.697v4.974A4.5 4.5 0 0 0 12.5 8a4.5 4.5 0 0 0-1.965.45l-.338-.207z"/>
+                    <path d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0m-1.993-1.679a.5.5 0 0 0-.686.172l-1.17 1.95-.547-.547a.5.5 0 0 0-.708.708l.774.773a.75.75 0 0 0 1.174-.144l1.335-2.226a.5.5 0 0 0-.172-.686"/>
+                  </svg><font size="3" color="grey" id="no1" >cardio@company.com</font>
+                </div>
+            </div>
+           
+          </div>
+        </div>
+      </div><br><br><br><br>
+      <!-- News Section started -->
+      <section class="news" id="news"><br><br><br>
+        <h1 align="center" >
+        <font size="7"><b>   Latest News</b></font>
+        </h1> <br><br>
+       
+        <div class="row row-cols-1 row-cols-md-3 g-4" id="news-cards">
+          <div class="col">
+            <div class="card">
+              <img src="https://themewagon.github.io/health-center/images/news-image1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <font color="grey" size="3">February 14, 2024</font><br><br>
+                <h5 class="card-title">About Amazing <br> Technology</h5>
+               <font color="grey" >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, repellat.</font><hr><br>
+                  <table>
+                    <tr>
+                      <td >
+                        <img src="https://themewagon.github.io/health-center/images/author-image.jpg" alt="" height="60px" width="60px" id="ceo">
+                      </td>
+                      <td id="Founder">
+                          Jeremie Carlson: <font color="grey"> CEO / Founder</font>
+                      </td>
+                    </tr>
+                  </table>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="https://themewagon.github.io/health-center/images/news-image2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <font color="grey" size="3">February 14, 2024</font><br><br>
+                <h5 class="card-title">Introducing a new <br> healing process</h5>
+               <font color="grey" >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, repellat.</font><hr><br>
+               <table>
+                <tr>
+                  <td >
+                    <img src="https://themewagon.github.io/health-center/images/author-image.jpg" alt="" height="60px" width="60px" id="ceo">
+                  </td>
+                  <td id="Founder">
+                      Jason Stewart: <font color="grey">General Director</font>
+                  </td>
+                </tr>
+              </table>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="https://themewagon.github.io/health-center/images/news-image3.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <font color="grey" size="3">February 14, 2024</font><br><br>
+                <h5 class="card-title">Review Annual Medical Research</h5>
+               <font color="grey" >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, repellat.</font><hr><br>
+               <table>
+                <tr>
+                  <td >
+                    <img src="https://themewagon.github.io/health-center/images/author-image.jpg" alt="" height="60px" width="60px" id="ceo">
+                  </td>
+                  <td id="Founder">
+                       Andrio Abero:<font color="grey"> Online Advertising </font>
+                  </td>
+                </tr>
+              </table>
+              </div>
+            </div>
+          </div>
+         
+        </div> <br><br>
+      </section><br><br>
+      <!-- Apointment Section -->
+      <section id="appointment"><br><br><br>
+        <div class="container-fluid">
+          <div class="container px-4 text-center">
+            <div class="row gx-5">
+              <div class="col">
+               <div class="p-3 Appointment"></div>
+              </div>
+              <div class="col"><br><br>
+                <div class="p-3 ">
+                  <h1>
+                    Make an appointment
+                  </h1>
+                
+                     
+                      </div>
+                      <form action="" align="center " bgcolor="whitesmoke">
+                        <label for=""><font size="4">Name:</font></label><br>
+                         <input type="text" placeholder="Full name">
+                        <br><br>
+                          <label for=""><font size="4">Phone no:</font></label><br>
+                          <input type="text" placeholder="Phone-no"><br><br>
+                          <label for=""><font size="4">Email:</font></label><br>
+                          <input type="text" placeholder="Your-email"><br><br>
+                          <label for=""><font size="4">Select Department:</font></label><br>
+                                   <select >
+                                    <option value="">General-Health</option>
+                                    <option value="">General</option>
+                                    <option value="">Cardio </option>
+                                    <option value="">Dental</option>
+                                    <option value="">Medical</option>
+                                   </select><br><br>
+                          
+                          <label for=""><font size="4">Select Date:</font></label><br>
+                          <input type="date"><br><br>
+                          <label for=""><font size="4">Additional Message:</font></label><br>
+                          <textarea  cols="20" rows="4"></textarea><br><br>
+                          <button type="button" class="btn btn-primary">Submit Button</button>
+                      </form>
+                    </div>
+                  </div>
+                 
+                 
+                </div>
+              </div>
+        </section><br><br>
+        <section id="google-map">
+       
+               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3499.4147540266517!2d77.28264642930304!3d28.707148567857775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfbf633efd207%3A0x5711594b9f211099!2sBlock%20G%2C%20Ganga%20Vihar%2C%20Gokalpur%2C%20Delhi%2C%20110094!5e0!3m2!1sen!2sin!4v1708010673916!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </section><br><br><br>
+          <section class="footer" id="contact">
+            <div class="container px-4 text-center" >
+              <div class="row gx-5">
+                <div class="col">
+                 <div class="p-3" align="left">
+                  <h3>
+                    Contact Info
+                  </h3><br>
+                  <p>
+                   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos blanditiis culpa repellendus nesciunt.
+                  </p>
+                  <div align="left">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-telephone-forward-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877zm10.761.135a.5.5 0 0 1 .708 0l2.5 2.5a.5.5 0 0 1 0 .708l-2.5 2.5a.5.5 0 0 1-.708-.708L14.293 4H9.5a.5.5 0 0 1 0-1h4.793l-1.647-1.646a.5.5 0 0 1 0-.708"/>
+                  </svg><font size="4" color="grey" id="no1" >010-040-0140</font></div><br>
+                  <div align="left" >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-envelope-check-fill" viewBox="0 0 16 16">
+                      <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.026A2 2 0 0 0 2 14h6.256A4.5 4.5 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586zM16 4.697v4.974A4.5 4.5 0 0 0 12.5 8a4.5 4.5 0 0 0-1.965.45l-.338-.207z"/>
+                      <path d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0m-1.993-1.679a.5.5 0 0 0-.686.172l-1.17 1.95-.547-.547a.5.5 0 0 0-.708.708l.774.773a.75.75 0 0 0 1.174-.144l1.335-2.226a.5.5 0 0 0-.172-.686"/>
+                    </svg><font size="3" color="grey" id="no1" >info@company.com</font>
+                  </div>
+                 </div>
+                </div>
+                <div class="col">
+                  <div class="p-3 " align="left">
+                    <h3>
+                      Latest News
+                    </h3>
+                    <table>
+                      <tr>
+                        <td>
+                          <img src="https://themewagon.github.io/health-center/images/news-image.jpg" alt="" width="75px" height="75px" id="footer-image">
+                        </td>
+                        <td id="footer-news">
+                           <font size="4" color="grey">Amazing Technology, &nbsp; &nbsp; &nbsp;</font><font color="grey">February 14, 2024</font>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><br>
+                          <img src="https://themewagon.github.io/health-center/images/news-image.jpg" alt="" width="75px" height="75px" id="footer-image">
+                        </td>
+                        <td id="footer-news">
+                           <font size="4" color="grey">New Healing Process, &nbsp; &nbsp; &nbsp;</font><font color="grey">February 14, 2024</font>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="p-3" align="left">
+                     <h3>
+                      Opening Hours
+                     </h3><br>
+                    <font color="grey">
+                      Monday - Friday &nbsp;  06:00 AM  -  10:00  PM <br> <br>Saturday &nbsp; 09:00 AM -  08:00 <br> <br> &nbsp;Sunday Closed 
+                    </font> <br>
+                    <table  >
+                      <tr>
+                        <td>
+                        <font size="3" color="grey">  <b>Contact Me</b> </font>
+                       
+                        
+                          <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-arrow-bar-right" viewBox="0 0 16 16" id="arrow">
+                            <path fill-rule="evenodd" d="M6 8a.5.5 0 0 0 .5.5h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L12.293 7.5H6.5A.5.5 0 0 0 6 8m-2.5 7a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5"/>
+                          </svg>
+                        </td>&nbsp;&nbsp;&nbsp;
+                        <td class="footer-logo">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                          </svg>
+                        </td >
+                        <td id="fb">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+                          </svg>
+                        </td>
+                        <td id="fb">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                          </svg>
+                        </td>
+                      </tr>
+                      
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>  <br><br>
+          <a href="#health-center">
+            <h4 align="center"  class="top" >
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"  fill="currentColor" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"/>
+              </svg>
+            </h4>
+          </a><hr>
+            <h6 align="center">
+              <font color="grey"> @ copywrite 2024- designed by Harsh Vardhan Singh</font>
+            </h6>
+          
+          </section>
+      
+</body>
+</html>
